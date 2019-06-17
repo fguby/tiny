@@ -85,4 +85,18 @@ public class UserController {
         List<User> userList = userService.listUser(pageNum, pageSize);
         return JSONResult.success(CommonPage.restPage(userList));
     }
+
+    @ApiOperation("修改用户")
+    @RequestMapping(value = "/update/{id}", method = RequestMethod.PUT)
+    @ResponseBody
+    public JSONResult updateUser(@PathVariable("id") Integer id, @RequestBody User user) {
+        JSONResult jsonResult;
+        int count = userService.updateUser(id, user);
+        if(count == 1) {
+            jsonResult = JSONResult.success(user);
+        } else {
+            jsonResult = JSONResult.failed("操作失败");
+        }
+        return jsonResult;
+    }
 }
