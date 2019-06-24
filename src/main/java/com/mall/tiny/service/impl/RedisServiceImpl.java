@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.concurrent.TimeUnit;
 
 /**
- * redis操作service的实现类
+ * redis操作service的实现类 111
  */
 @Service
 public class RedisServiceImpl implements RedisService {
