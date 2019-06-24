@@ -4,6 +4,13 @@ import com.mall.tiny.mbg.model.User;
 
 import java.util.List;
 
+/**
+ * Userservice接口
+ * 列出所有
+ * 创建
+ * 修改
+ * 删除
+ */
 public interface UserService {
     List<User> listAllUser();
 
