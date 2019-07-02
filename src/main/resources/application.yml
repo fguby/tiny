@@ -35,3 +35,11 @@ mybatis:
 logging:
   level:
     com.example.demo.dao : debug
+
+data:
+  elasticsearch:
+    repositories:
+      enabled: true
+    cluster-nodes: www.susheyougou.club:9300 #es连接地址
+    cluster-name: elasticsearch #es集群名字
+
