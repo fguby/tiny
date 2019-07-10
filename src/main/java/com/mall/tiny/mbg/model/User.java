@@ -1,5 +1,6 @@
 package com.mall.tiny.mbg.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModelProperty;
 
 import java.io.Serializable;
@@ -13,6 +14,7 @@ public class User implements Serializable {
     private String userName;
 
     @ApiModelProperty(value = "用户密码")
+    @JsonIgnore
     private String password;
 
     @ApiModelProperty(value = "用户手机号")
