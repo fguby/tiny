@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * 启动方法
+ * 2019.7
+ * Wu
  */
 @SpringBootApplication
 @MapperScan("com.mall.tiny.mbg.mapper")
